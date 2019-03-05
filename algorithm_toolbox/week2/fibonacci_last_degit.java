@@ -1,28 +1,28 @@
-package algorithm_toolbox.week3.week4.week2;
+package algorithm_toolbox.week2;//package week2;
 
 import java.util.Scanner;
 
-public class fibArray {
+public class fibonacci_last_degit {
     public static int fibFast(int n) {
-        if (n == 0) return 0;
         int[] arr = new int[n + 1];
         arr[0] = 1;
         arr[1] = 1;
         for (int i = 2; i <= n; i++) {
-            arr[i] = arr[i - 1] + arr[i - 2];
+            arr[i] = (arr[i - 1] + arr[i - 2])%10;
         }
-        return arr[n - 1];
+        return arr[n-1];
     }
-
 //    public static int fibSlow(int n) {
 //        if (n <= 2) {
 //           return 1;
 //        }
-//        return fibSlow(n - 1) + fibSlow(n - 2);
+//        return fibSlow(n - 1)%10 + fibSlow(n - 2)%10;
 //    }
+//
 
-    public static void main(String[] args) {
-        //test case
+        public static void main(String[] args) {
+
+//    //test case
 //        while (true) {
 //            int n = (int) ((Math.random()) * 5+1);
 //            System.out.println(n);
@@ -38,13 +38,13 @@ public class fibArray {
 //
 //        }
 
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
 
 
         System.out.println(fibFast(n));
 //        System.out.println(fibSlow(n ));
 
 
-    }
+}
 }
