@@ -1,4 +1,4 @@
-//package algorithm_toolbox.week4;
+package week4;//package algorithm_toolbox.week4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
