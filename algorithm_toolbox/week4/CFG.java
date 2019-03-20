@@ -1,4 +1,4 @@
-//package week4;
+package algorithm_toolbox.week4;//package week4;
 
 import java.util.Scanner;
 

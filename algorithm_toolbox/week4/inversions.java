@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+package algorithm_toolbox.week4;//import java.util.Scanner;
 //
 //class inversions {
 //
